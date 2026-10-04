@@ -47,7 +47,7 @@ def fetch_openfoodfacts(query, search_type="barcode"):
         )
 
         if response.status_code != 200:
-           return None
+            return None
 
         data = response.json()
 
@@ -79,8 +79,8 @@ def fetch_openfoodfacts(query, search_type="barcode"):
             timeout=10
         )
 
-    if response.status_code != 200:
-        return None
+        if response.status_code != 200:
+            return None
 
         data = response.json()
 
